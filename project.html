@@ -10,27 +10,25 @@
         </style>
         <script>
         function total(){
-
             var tax = parseFloat(8.875);
-            var subtotal = 100
+            var subtotal = parseFloat(100);
             var build = "";
-            build += "Subtotal: " + subtotal </br>
+            var shipping = parseFloat(40);
+            var total = subtotal + tax + shipping;
+            build += "Subtotal: " + subtotal + "/n";
+           
+            build += "Tax: " + tax + "/n";
+            build += "shipping: " + shipping + "/n";
+            build += "Total: " + total;
+
             var output = document.getElementById("output");
             output.innerHTML = build
-
-
-
-
-                   
-
-
+             
         }
     </script>
 
-
     </head>
     <body>
-
 
     <div>
         <h2> 1 </h2>
@@ -44,7 +42,6 @@
     </div>
     <button onclick = "total()" >Purchase </button>
     <div id = "invoice"></div>
-
     
     <div>
         <h2> 2 </h2>
