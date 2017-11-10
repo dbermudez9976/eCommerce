@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Destiny</title>
+        <style>
+            img{
+                width:100px;
+
+            }
+
+        </style>
+
+    <script>
+        function total(){
+            var tax = parseFloat(8.875);
+            var subtotal = parseFloat(100);
+            var build = "";
+            var shipping = parseFloat(40);
+            var total = subtotal + tax + shipping;
+            var Quantity;
+            build += "Subtotal: " + subtotal + "/n";
+            build += "Tax: " + tax + "/n";
+            build += "shipping: " + shipping + "/n";
+            build += "Total: " + total;
+            alert(build);
+            
+        }
+
+        </script>
+        
+
+   </head>
+    <body>
+
+    <div>
+        <h2> Space Jams </h2>
+        <img src="dberm9976\p1.png"><br>
+        <span>$99.99</span>
+        <p>
+        Space Jams. Jordan 11
+        </p>
+        <input id = "quantity1" type = "text">
+        
+    </div>
+    <button onclick="total()" >Purchase </button>
+    <div id = "invoice"></div>
+    </body>
+    <div>
+        <h2> Breds </h2>
+        <img src="dberm9976\bred.jpg"><br>
+        <span>$99.99</span>
+        <p>
+        Breds. Jordan 11
+        </p>
+        <input id = "quantity1" type = "text">
+
+    </div>
+    <button onclick="total()" >Purchase </button>
+    <div id = "invoice"></div>
+
+    
+    <div>
+        <h2> Hares </h2>
+        <img src="dberm9976\hare.jpg"><br>
+        <span>$99.99</span>
+        <p>
+        Hares. Jordan 1s
+        </p>
+        <input id = "quantity1" type = "text">
+
+
+    </div>
+    <button onclick="total()" >Purchase </button>
+    <div id = "output"></div>
+
+    </body>
+</hmtl>
+</hmtl>
